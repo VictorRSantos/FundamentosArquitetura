@@ -7,9 +7,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="04 - InterfaceVsImplementacao\" />
-    <Folder Include="03 - HerancaVsComposicao\" />
-  </ItemGroup>
-
 </Project>

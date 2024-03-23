@@ -1,6 +1,4 @@
-﻿using System.Runtime.CompilerServices;
-
-// [assembly: InternalsVisibleTo("ProjetoB")]
+﻿// [assembly: InternalsVisibleTo("ProjetoB")]
 // Extendendo a visibilidade do ProjetoA para o ProjetoB
 namespace ProjetoA
 {
@@ -34,7 +32,7 @@ namespace ProjetoA
             //var abstrata = new Abstrata();
         }
     }
-       
+
     //class TesteSelada : Selada { }
 
 
@@ -56,14 +54,14 @@ namespace ProjetoA
     class TesteModificador2 : Publica
     {
         public TesteModificador2()
-        {          
+        {
 
-           TestePublico();
-           TesteInternal();
-           TesteProtegido();
-           TesteProtegidoInterno();
-           TestePrivadoProtegido();
-           //TestePrivado();
+            TestePublico();
+            TesteInternal();
+            TesteProtegido();
+            TesteProtegidoInterno();
+            TestePrivadoProtegido();
+            //TestePrivado();
         }
     }
 

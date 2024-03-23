@@ -12,7 +12,7 @@
             var idade = dataAtual.Year - DataNascimento.Year;
 
             if (dataAtual < DataNascimento.AddYears(idade)) idade--;
-            
+
             return idade;
         }
     }
