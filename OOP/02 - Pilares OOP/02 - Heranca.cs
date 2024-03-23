@@ -14,7 +14,7 @@
             var funcionario = new Funcionario()
             {
                 Nome = "João da Silva",
-                DataNascimento = Convert.ToDateTime(value:"1990/01/01"),
+                DataNascimento = Convert.ToDateTime(value: "1990/01/01"),
                 DataAdmissao = DateTime.Now,
                 Registro = "0123456"
             };
