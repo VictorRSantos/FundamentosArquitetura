@@ -1,4 +1,5 @@
 using DemoDI.Cases;
+using Microsoft.AspNetCore.HttpLogging;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,7 +20,7 @@ builder.Services.AddScoped<IClienteServices, ClienteServices>();
 #endregion
 
 #region Generics
-
+builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 #endregion
 
 #region MultiplasClasses
