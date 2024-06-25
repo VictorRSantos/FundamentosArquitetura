@@ -1,12 +1,13 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using DemoDI.Cases;
+using Microsoft.AspNetCore.Mvc;
 
 namespace DemoDI.Controllers
 {
     public class FromServicesController : Controller
     {
-        public IActionResult Index()
+        public void Index([FromServices] IClienteServices clienteServices)
         {
-            return View();
+            clienteServices.AdicionarCliente(new Cliente());
         }
     }
 }
