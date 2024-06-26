@@ -1,12 +1,15 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using DemoDI.Cases;
+using Microsoft.AspNetCore.Mvc;
 
 namespace DemoDI.Controllers
 {
     public class ServiceLocator2Controller : Controller
     {
-        public IActionResult Index()
+        public void Index([FromServices] IServiceProvider serviceProvider)
         {
-            return View();
+            // Retorna null se não estiver registrado
+            serviceProvider.GetRequiredService<IClienteServices>().AdicionarCliente(new Cliente());
         }
     }
 }
+ 
